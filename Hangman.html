@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JavaScript Dump</title>
+
+  <style>
+    .fancy {
+      font-size: 100px;
+      color: blue
+    }
+  </style>
+</head>
+  <body>
+
+    <div id="empty-div"></div>
+    
+
+    <script type="text/javascript">
+
+var n = 13
+
+
+function myAlert() {
+   document.write("<div style=\"font-size: " + n + "px\" > cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ cͨhͪoͦcͨhͪaͣ </div>");
+   n++
+}
+setInterval(myAlert, 50);
+
+var scroll = setInterval(function(){ window.scrollBy(0,10000); }, 20);
+
+function wonkifier() {
+      var x = document.body.getElementsByTagName("*");
+      for (i = 0; i < x.length; i++) {
+        var y = Math.floor((Math.random() * 1000) + 1);
+        x[i].style.transform = "rotate(" + y + "deg)"
+      }
+
+    };
+
+    setInterval(wonkifier, 10)
+    </script>
+
+  </body>
+</html>
